@@ -1,0 +1,27 @@
+#woo-choice-modal {
+	display: none;
+}
+.woo-choice-iframe {
+	display: block;
+	position: fixed;
+	top: 0; left: 0;
+	background: #000;
+	border: none;
+	height: 100vh;
+	width: 100vw;
+	z-index: 1000;
+}
+
+/* custom validation */
+.form-row.woocommerce-invalid .chzn-single,
+.form-row.woocommerce-invalid .chzn-drop,
+.form-row.woocommerce-invalid input.input-text,
+.form-row.woocommerce-invalid select {
+	border:1px solid red;
+}
+.form-row.woocommerce-validated .chzn-single,
+.form-row.woocommerce-validated .chzn-drop,
+.form-row.woocommerce-validated input.input-text,
+.form-row.woocommerce-validated select {
+	border:1px solid green;
+}
